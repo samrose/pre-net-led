@@ -1,7 +1,7 @@
-{ stdenv, buildGoPackage, fetchFromGitHub }:
-
+#{ stdenv, buildGoPackage, fetchFromGitHub }:
+with import <nixpkgs> {};
 buildGoPackage rec {
-  name    = "pre-net-led;
+  name    = "pre-net-led";
   
 
   goPackagePath = "github.com/samrose/pre-net-led";
