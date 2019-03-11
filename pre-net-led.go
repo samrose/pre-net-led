@@ -23,8 +23,9 @@ func main(){
     // Make sure to close it later.
     defer port.Close()
 
-    // Write 4 bytes to the port.
-    b := []byte("R*")
+    // Write 2 bytes to the port.
+    //Flash purple on startup
+    b := []byte("P*")
     n, err := port.Write(b)
     if err != nil {
       log.Fatalf("port.Write: %v", err)
